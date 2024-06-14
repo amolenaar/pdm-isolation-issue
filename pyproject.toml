@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "not-a-valid-dependency"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdm-isolation-issue"
+version = "0.0.0"
+description = "Showcase issue when building without isolation"
+authors = [
+    { name = "Arjan Molenaar", email = "gaphor@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.pdm.dev-dependencies]
+build = [
+    "setuptools",
+]
+
+[tool.pdm.options]
+install = ["--no-isolation"]
+

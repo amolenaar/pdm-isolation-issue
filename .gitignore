@@ -1,0 +1,6 @@
+.venv
+.vscode
+.pdm-python
+pdm.lock
+*.egg-info/
+__pycache__
