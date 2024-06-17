@@ -1,5 +1,7 @@
 # PDM isolation issue
 
+> This is a showcase project for https://github.com/pdm-project/pdm/issues/2944, not a project template.
+
 This project shows an issue with installing packages in non-isolation mode with PDM.
 
 This project will normally not install, since the build-system requires a non-existant dependency. This project does make clear the difference in how pip and pdm deal with isolation in the build environment.
